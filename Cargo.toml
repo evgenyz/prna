@@ -1,0 +1,25 @@
+[package]
+name = "prna"
+version = "0.1.0"
+authors = ["Evgeny Kolesnikov <evgenyz@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+#codegen-units = 1
+debug = 0
+#lto = true
+opt-level = 3
+panic = "abort"
+
+[dependencies]
+structopt = "0.3"
+#rust-crypto = "0.2"
+#md-5 = "0.9"
+openssl-sys = "0.9"
+openssl = "0.10"
+bytes = "1.0"
+indicatif = "0.15"
+#arr = "0.6"
+copyless = "0.1"
